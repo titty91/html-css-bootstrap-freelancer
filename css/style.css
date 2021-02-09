@@ -4,8 +4,29 @@
   box-sizing: border-box;
 }
 
-[class="col-"]{
+[class*="col-"]{
   min-height: 100px;
   background-color: lightgreen;
   border: 1px solid black;
+}
+
+header{
+  background-color: lightblue;
+}
+
+.jambotron{
+  background-color: lightpink;
+}
+
+.about{
+  background-color: lightblue;
+}
+
+footer{
+  background-color: lightpink;
+}
+
+.copyright{
+  background-color: lightblue;
+
 }
