@@ -18,8 +18,21 @@ header{
   background-color: lightpink;
 }
 
+.portolio{
+  text-align: center;
+}
+
+.portolio .titolo{
+    padding: 30px 0;
+}
+
 .about{
   background-color: lightblue;
+  text-align: center;
+}
+
+.about .titolo{
+  padding: 30px 0;
 }
 
 footer{
