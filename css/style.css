@@ -42,7 +42,7 @@ header{
 /* barra di navigazione destra */
 
 .navleft{
-  font-size: calc(0.5em + 1vw);
+  font-size: calc(5px + 1vw);
   color: white;
 }
 
@@ -74,13 +74,31 @@ header{
     background-image: url("../img/bars-solid.svg");
     background-repeat: no-repeat;
     color: white;
-
   }
 
-  /* .navright li{
+  .navright li{
     display: none;
-  } */
+  }
+
+  .navrightsmall a{
+    display: inline-block;
+    float: right;
+    height: 40px;
+  }
+
+  .navrightsmall img{
+    height: 45px;
+    margin:  15px auto;
+  }
+
 }
+
+@media all and (min-width: 576px){
+  .navrightsmall{
+  display: none;
+  }
+}
+
 
 /* immagine di copertina */
 
@@ -95,6 +113,12 @@ header{
   max-width: 20rem;
   margin-top: 50px;
 }
+
+.jambotron a:hover{
+  color: #1abc9c;
+
+}
+
 .jambotron h1{
   font-size: 5.5rem;
 }
@@ -157,6 +181,7 @@ header{
 .about button:hover{
   background-color: white;
   color: #333333;
+  transition: all 0.3s;
 }
 
 /*  zona dedicata all'utente */
@@ -195,6 +220,7 @@ header{
 .contact button:hover{
   color: white;
   background-color: #308c74;
+  transition: all 0.3s;
 }
 
 /* <!-- piè di pagina --> */
@@ -237,6 +263,7 @@ footer{
 .social a:hover{
   background-color: white;
   color: #3a546d;
+  transition: all 0.3s;
 }
 
 .copyright{
