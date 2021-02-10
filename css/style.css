@@ -69,34 +69,13 @@ header{
   text-decoration: none;
 }
 
-@media all and (max-width: 576px){
-  .navright{
-    background-image: url("../img/bars-solid.svg");
-    background-repeat: no-repeat;
-    color: white;
-  }
-
-  .navright li{
-    display: none;
-  }
-
-  .navrightsmall a{
-    display: inline-block;
-    float: right;
-    height: 40px;
-  }
-
-  .navrightsmall img{
-    height: 45px;
-    margin:  15px auto;
-  }
-
+.navright a:hover{
+  color:#1abc9c;
 }
 
-@media all and (min-width: 576px){
-  .navrightsmall{
-  display: none;
-  }
+.navrightsmall img{
+  height: 45px;
+  margin:  15px auto;
 }
 
 
@@ -115,7 +94,9 @@ header{
 }
 
 .jambotron a:hover{
-  color: #1abc9c;
+  opacity: 1;
+  background-color: #1abc9c;
+  transition: all 0.3s;
 
 }
 
@@ -123,17 +104,17 @@ header{
   font-size: 5.5rem;
 }
 
-.jambotron .fas fa-star{
-  font-size: 10px;
+.fas.fa-star{
+  font-size: 30px;
+}
+
+.fas.fa-minus{
+  font-size: 30px;
 }
 
 .sottotitolo p{
   margin-top: 20px;
   margin-bottom: 80px;
-}
-
-.divisorio i>.fas fa-minus{
-  color: red;
 }
 
 
@@ -150,10 +131,13 @@ header{
 .cella{
   margin: 20px auto;
 }
+
 .cella img{
   max-height: 250px;
   border-radius: 10px;
 }
+
+
 
 /* main about */
 .about{
