@@ -5,6 +5,9 @@
     <title>html-css-bootstrap-freelancer</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,10 +18,32 @@
             <section>
               <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6">
-                  Start Bootstrap
+                  <h1 class="navleft">
+                    <a href="#">
+                      <strong>
+                        START BOOTSTRAP
+                      </strong>
+                    </a>
+                  </h1>
                 </div>
                 <div class="col-xs-6 col-md-6 col-lg-6">
-                  PORTFOLIO ABOUT CONTACT
+                  <ul class="navright">
+                    <li>
+                      <a href="#">
+                        PORTFOLIO
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                      >ABOUT
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        CONTACT
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </section>
@@ -29,13 +54,20 @@
           <div class="jambotron">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                  <img src="" alt="">
+                <div class="col-lg-12">
+                  <img src="img/avataaars.svg" alt="immagine profilo">
                   <h1>
-                    start bootstrap
+                    <strong>
+                      START BOOTSTRAP
+                    </strong>
                   </h1>
-                  <span>
-                    Graphic Artist - Web Designer - Illustrator
+                  <section>
+                    <i class="fas fa-minus"></i> <i class="fas fa-star"></i> <i class="fas fa-minus"></i>
+                  </section>
+                  <span class="sottotitolo">
+                    <p>
+                      Graphic Artist - Web Designer - Illustrator
+                    </p>
                   </span>
                 </div>
               </div>
@@ -48,26 +80,45 @@
             <!-- porfolio -->
             <div class="row">
               <section class="titolo">
-                PORTFOLIO
+                <h2>
+                  <strong>
+                    PORTFOLIO
+                  </strong>
+                </h2>
+                <section class="divisorio">
+                  <i class="fas fa-minus"></i> <i class="fas fa-star"></i> <i class="fas fa-minus"></i>
+                </section>
               </section>
               <!-- griglia immagini -->
               <section class="col-xs-12 col-md-6 col-lg-4">
-                casetta
+                <div class="cella">
+                  <img src="img/cabin.png" alt="immagine casetta di legno">
+                </div>
               </section>
               <section class="col-xs-12 col-md-6 col-lg-4">
-                torta
+                <div class="cella">
+                  <img src="img/cake.png" alt="immagine fetta di torta">
+                </div>
               </section>
               <section class="col-xs-12 col-md-6 col-lg-4">
-                tendone
+                <div class="cella">
+                  <img src="img/circus.png" alt="immagine fetta di torta">
+                </div>
               </section>
               <section class="col-xs-12 col-md-6 col-lg-4">
-                joystick
+                <div class="cella">
+                  <img src="img/game.png" alt="immagine joystick">
+                </div>
               </section>
               <section class="col-xs-12 col-md-6 col-lg-4">
-                cassaforte
+                <div class="cella">
+                  <img src="img/safe.png" alt="immagine joystick">
+                </div>
               </section>
               <section class="col-xs-12 col-md-6 col-lg-4">
-                sottomarino
+                <div class="cella">
+                  <img src="img/submarine.png" alt="immagine sottomarina">
+                </div>
               </section>
             </div>
           </div>
@@ -79,16 +130,27 @@
               <div class="container">
                 <div class="row">
                   <section class="titolo">
-                    ABOUT
+                    <h2>
+                      <strong>
+                        ABOUT
+                      </strong>
+                    </h2>
+                    <section class="divisorio">
+                      <i class="fas fa-minus"></i> <i class="fas fa-star"></i> <i class="fas fa-minus"></i>
+                    </section>
                   </section>
-                  <section class="col-xs-12 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
-                    testo 1
+                  <section class="testo col-xs-12 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
+                    <p>
+                      Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                    </p>
                   </section>
-                  <section class="col-xs-12 col-md-3 col-lg-3">
-                    testo 2
+                  <section class="testo col-xs-12 col-md-3 col-lg-3">
+                    <p>
+                      You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+                    </p>
                   </section>
-                  <section class="col-xs-12 col-md-12 col-lg-12">
-                    bottone
+                  <section class="click col-xs-12 col-md-12 col-lg-12">
+                    <button type="button" class="btn btn-outline-light"><i class="fas fa-download"></i> Free Download!</button>
                   </section>
                 </div>
               </div>
@@ -99,11 +161,31 @@
             <div class="contact">
               <div class="container">
                 <div class="row">
-                  <section class="col-xs-12 col-md-12 col-lg-12">
-                    contact me
+                  <section class="col-lg-12">
+                    <section class="titolo">
+                      <h2>
+                        <strong>
+                          CONTACT ME
+                        </strong>
+                      </h2>
+                      <section class="divisorio">
+                        <i class="fas fa-minus"></i> <i class="fas fa-star"></i> <i class="fas fa-minus"></i>
+                      </section>
+                    </section>
+
                   </section>
                   <section class="col-xs-12 col-md-12 col-lg-12">
-                    dati utente
+                    <div class="utente">
+                      <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email Address">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone Number">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Message">
+                      </div>
+                      <button type="button" class="btn btn-outline-light">
+                        Send
+                      </button>
+                    </div>
                   </section>
                 </div>
               </div>
@@ -117,14 +199,31 @@
             <div class="container">
               <div class="row">
                 <section class="col-xs-12 col-md-4 col-lg-4">
-                  location
+                  <strong>
+                    LOCATION
+                  </strong>
+                  <p>
+                    2215 John Daniel Drive <br>Clark, MO 65243
+                  </p>
                 </section>
                 <section class="col-xs-12 col-md-4 col-lg-4">
-                  around the web
+                  <strong>
+                    AROUND THE WEB
+                  </strong>
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                  </div>
                 </section>
                 <section class="col-xs-12 col-md-4 col-lg-4">
-                  About Freelancer
-                </section>
+                  <strong>
+                    ABOUT FREELANCER
+                  </strong>
+                  <p>
+                    Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#">Start Bootstrap.</a>
+                  </p>
               </div>
             </div>
           </div>
@@ -132,7 +231,7 @@
           <div class="copyright">
             <div class="container">
               <section class="row">
-                <section class="col-xs-12 col-md-12 col-lg-12">
+                <section class="col-lg-12">
                   Copyright © Your Website 2020
                 </section>
               </section>
